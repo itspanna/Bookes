@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">        
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Books</h1>
+      <p>Kérem, adja be a könyv(ek) adatait!</p>
+      <button type="button" class="btn btn-primary">
+        <i class="bi bi-bookmark-plus"></i>
+       </button>
+       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="operatorModal" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+
+              <div class="addform">
+                <div class="input">
+                  <label for="id" class="form-label">
+                    ID
+                  </label>
+                  <input type="text" id="id"
+                  class="form-control">
+                </div>
+                <div class="input">
+                  <label for="title" class="form-label">
+                    Cím
+                  </label>
+                  <input type="text" id="title"
+                  class="form-control">
+                </div>
+                <div class="input">
+                  <label for="Author" class="form-label">
+                    Szerző
+                  </label>
+                  <input type="text" id="Author"
+                  class="form-control">
+                </div>
+                <div class="input">
+                  <label for="Price" class="form-label">
+                    Ár
+                  </label>
+                  <input type="text" id="Price"
+                  class="form-control">
+                </div>
+                <div>
+                  
+                </div>
+              </div>
+        
+
+
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" id="addButton">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <table class = "table table-striped">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Cím</th>
+            <th>Szerző</th>
+            <th>Ár</th>
+          </tr>
+        </thead>
+        <tbody id="empBody"></tbody>
+      </table>
+    </div>
+    <script type="module" src="app.js"></script>
+    <script src="bootstrap.js"></script>
+  
+  </body>
+</html>
+

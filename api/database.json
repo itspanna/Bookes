@@ -1,0 +1,10 @@
+{
+  "Books": [
+    {
+      "id": 12,
+      "title": "Elveszett próféciák",
+      "Author": "Neil Gaiman",
+      "Price": 3000
+    }
+  ]
+}
